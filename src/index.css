@@ -1,0 +1,232 @@
+body {
+  background-color: #91afcc;
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  width: 70%;
+}
+
+.leaflet-container {
+  height: 80vh;
+}
+
+header {
+  width: 100%;
+  background-color: #c5d5e4;
+  border-bottom: #938581ff;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.nav-pills .nav-link {
+  padding: 4px 8px 8px 8px;
+  margin: 10px 5px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+}
+
+.header-graphic {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: none;
+  color: black;
+}
+
+.nav-pills .nav-item:hover {
+  border-bottom: 4px solid #436585;
+  padding: 0;
+}
+
+.description {
+  background-color: #436585;
+  padding: 20px;
+  color: #e9e2e2;
+}
+
+.about {
+  padding: 10px;
+}
+
+.sorting-header {
+  margin: 10px 15px;
+  height: 68px;
+  padding: 10px 0;
+}
+
+.sorting-button {
+  display: inline;
+  margin-right: 10px;
+  font-weight: 600;
+  border: none;
+}
+
+.sorting-button:hover {
+  border: none;
+  border-bottom: 5px solid #436585;
+}
+
+.sorting-header div {
+  display: inline;
+  border: 1px solid black;
+  line-height: 10px;
+}
+
+.sorting-reset,
+.sorting-header .sorting-direction {
+  display: inline;
+  background-color: #f0f0f0;
+  padding: 4px 8px 8px 8px;
+  border-radius: 2px;
+  border: 2px solid #436585;
+  margin-left: 7px;
+}
+
+.sorting-header button {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.searchbar {
+  width: 350px;
+  margin: 0 20px;
+}
+
+.searchbar input {
+  width: 100%;
+  margin: 0 0 10px 10px;
+}
+
+.no-results {
+  padding: 8px;
+  background-color: #ececec;
+  width: 350px;
+  text-align: center;
+}
+
+.location-list {
+  max-width: 400px;
+  height: 80vh;
+  overflow-y: scroll;
+  display: inline-block;
+}
+
+.locations {
+  padding: 5px;
+  border-bottom: 2px solid lightgray;
+  background-color: #ececec;
+  width: 350px;
+}
+.locations:nth-child(odd) {
+  background-color: #c5d5e4;
+}
+
+.location-name {
+  width: fit-content;
+  font-size: 18px;
+}
+
+.location-neighborhood {
+  font-size: 12px;
+}
+
+.location-neighborhood:hover {
+  cursor: default;
+}
+
+.location-type {
+  font-size: 15px;
+}
+
+.location-directions,
+.location-type {
+  margin-left: 4px;
+}
+.location-directions a {
+  text-decoration: none;
+  color: #01502e;
+  font-weight: 600;
+}
+
+.location-directions a:visited {
+  color: #01502e;
+}
+
+.location-directions a:hover {
+  text-decoration: underline;
+}
+
+.location-directions i {
+  font-size: 11px;
+}
+.location-visited {
+  font-weight: 800;
+  color: green;
+  margin-right: 4px;
+}
+
+.marker-check {
+  color: darkgreen;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 1px 0;
+  }
+  .description {
+    padding: 10px;
+  }
+
+  .sorting-header button {
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px 8px;
+  }
+
+  .sorting-header div {
+    display: none;
+  }
+  .sorting-header .sorting-reset {
+    margin-left: 105px;
+  }
+  .sorting-header .sorting-direction {
+    margin-left: 4px;
+    padding: 3px 5px;
+  }
+
+  .searchbar {
+    width: 300px;
+    display: block;
+    margin-top: 35px;
+  }
+  .location-list {
+    width: 100%;
+    height: 50vh;
+  }
+  .leaflet-container {
+    width: 90%;
+    height: 50vh;
+  }
+}
